@@ -1,0 +1,108 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Merienda', cursive;
+	min-height:100vh;
+	background-image:linear-gradient(125deg,#5500ff,#a31aff, #8080ff);
+}
+
+#particles-js{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    margin-top:5%;
+    
+}
+
+.container{
+	width:100%;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	color:#343434;
+}
+
+.container h1{
+	font-size:160px;
+	margin:0;
+	font-wight:900;
+	letter-spacing:20px;
+	background:url('2.jpg') center no-repeat;
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+}
+
+.container a{
+	text-decoration:none;
+	background: #8080ff;
+	color:#fff;
+	padding:12px 24px;
+	display:inline-block;
+	border-radius:25px;
+	font-size:14px;
+	text-transform:uppercase;
+	transition:0.4s;
+}
+
+.container a:hover{
+ 
+     background: #6666ff;	
+
+}
+
+#footer{
+	background-color:linear-gradient(125deg,#5500ff,#a31aff, #8080ff);
+	position:relative;
+	height:50px;
+	top:950px;
+	clar:both;
+	color:#6666ff;
+	font-size:1.7em;
+	text-align:center;
+	max-height:50px;
+}
+
+.neon2{
+	position:absolute;
+	top:15%;
+	left:50%;
+	transform:translate(-50%,50%);
+	margin:0;
+	padding:0 20px;
+	font-size:1em;
+	/*color:#fff;*/
+	text-shadow:0 0 20px #884dff;
+	color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	
+}
+
+.neon2:after{
+	
+	content: attr(data-text);
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0 3px;
+	z-index:-1;
+	color:#4d4dff;
+	filter:blur(15px);
+}
+
+.neon2:before{
+	
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:50px;
+	background:#1a1aff;
+	z-index:-2;
+	opacity:.5;
+	filter:blur(40px);
+	color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	
+}

@@ -1,0 +1,169 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Merienda', cursive;
+	
+}
+
+body{
+	background-image:url('8.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:100px;
+	height:100vh;
+    width: 100%;
+    margin:0;
+    padding:0;
+
+}
+
+#particles-js{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    margin-top:5%;
+    
+}
+
+.loc{
+	position:relative;	 
+    width: 500px;
+    heigth:500px;
+    padding: 50px;
+    margin: 60px aut0;
+    left:450px;
+    top:220px;
+
+}
+
+.loc:before,.loc:after{
+	content:'';
+	position:absolute;
+	top:40px;
+	left:35px;
+	background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#fff000,#ff0000,#fb0094,#0000ff,#00ff00,#fff000,#ff0000);
+	background-size:400%;
+	width:calc(165% + 4px);
+	height:calc(88% + 4px);
+	z-index:-1;
+	animation:animate 20s linear infinite;
+	
+}
+
+@keyframes animate{
+	0%
+	{
+	  background-position:0  0;
+	}
+	50%{
+	  background-position:300% 0;
+    }
+    100%{
+      background-position:0 0;
+
+    } 
+	
+	
+}
+
+
+.neon{
+	position:absolute;
+	top:10%;
+	left:47%;
+	transform:translate(-50%,50%);
+	margin:0;
+	padding:0 20px;
+	font-size:6em;
+	/*color:#fff;*/
+	text-shadow:0 0 20px #884dff;
+	color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	
+}
+
+.neon:after{
+	
+	content: attr(data-text);
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0 20px;
+	z-index:-1;
+	color:#4d4dff;
+	filter:blur(15px);
+}
+
+.neon:before{
+	
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#1a1aff;
+	z-index:-2;
+	opacity:.5;
+	filter:blur(40px);
+	color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	
+}
+
+#footer{
+	background-color:#26004d;
+	position:relative;
+	height:67px;
+	top:250px;
+	clar:both;
+	color:#6666ff;
+	font-size:1.7em;
+	text-align:center;
+	max-height:50;
+}
+
+.neon2{
+	position:absolute;
+	top:-6%;
+	left:47%;
+	transform:translate(-50%,50%);
+	margin:0;
+	padding:0 20px;
+	font-size:1em;
+	/*color:#fff;*/
+	text-shadow:0 0 20px #884dff;
+	color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	
+}
+
+.neon2:after{
+	
+	content: attr(data-text);
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0 3px;
+	z-index:-1;
+	color:#4d4dff;
+	filter:blur(15px);
+}
+
+.neon2:before{
+	
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:50px;
+	background:#1a1aff;
+	z-index:-2;
+	opacity:.5;
+	filter:blur(40px);
+	color:linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+	
+}
+
+
